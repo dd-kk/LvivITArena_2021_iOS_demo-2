@@ -15,18 +15,12 @@
 		DAAABAA226DFA4D0001CB7AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAABAA026DFA4D0001CB7AC /* LaunchScreen.storyboard */; };
 		DAAABAA526DFA4D0001CB7AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAABAA426DFA4D0001CB7AC /* main.m */; };
 		DAAABAAF26DFA4D0001CB7AC /* Demo_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAABAAE26DFA4D0001CB7AC /* Demo_2Tests.m */; };
-		DAAABABA26DFA4D0001CB7AC /* Demo_2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAABAB926DFA4D0001CB7AC /* Demo_2UITests.m */; };
+		DAC8C81D26F0E3D7002C3694 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8C81C26F0E3D7002C3694 /* Calculator.m */; };
+		DAC8C81E26F0E406002C3694 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8C81C26F0E3D7002C3694 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DAAABAAB26DFA4D0001CB7AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAAABA8726DFA4CD001CB7AC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DAAABA8E26DFA4CD001CB7AC;
-			remoteInfo = Demo_2;
-		};
-		DAAABAB626DFA4D0001CB7AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAAABA8726DFA4CD001CB7AC /* Project object */;
 			proxyType = 1;
@@ -51,9 +45,8 @@
 		DAAABAAA26DFA4D0001CB7AC /* Demo_2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAABAAE26DFA4D0001CB7AC /* Demo_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_2Tests.m; sourceTree = "<group>"; };
 		DAAABAB026DFA4D0001CB7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAAABAB526DFA4D0001CB7AC /* Demo_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAAABAB926DFA4D0001CB7AC /* Demo_2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_2UITests.m; sourceTree = "<group>"; };
-		DAAABABB26DFA4D0001CB7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC8C81B26F0E3D7002C3694 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		DAC8C81C26F0E3D7002C3694 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +64,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAAABAB226DFA4D0001CB7AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,7 +72,6 @@
 			children = (
 				DAAABA9126DFA4CD001CB7AC /* Demo_2 */,
 				DAAABAAD26DFA4D0001CB7AC /* Demo_2Tests */,
-				DAAABAB826DFA4D0001CB7AC /* Demo_2UITests */,
 				DAAABA9026DFA4CD001CB7AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +81,6 @@
 			children = (
 				DAAABA8F26DFA4CD001CB7AC /* Demo_2.app */,
 				DAAABAAA26DFA4D0001CB7AC /* Demo_2Tests.xctest */,
-				DAAABAB526DFA4D0001CB7AC /* Demo_2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +99,8 @@
 				DAAABAA026DFA4D0001CB7AC /* LaunchScreen.storyboard */,
 				DAAABAA326DFA4D0001CB7AC /* Info.plist */,
 				DAAABAA426DFA4D0001CB7AC /* main.m */,
+				DAC8C81B26F0E3D7002C3694 /* Calculator.h */,
+				DAC8C81C26F0E3D7002C3694 /* Calculator.m */,
 			);
 			path = Demo_2;
 			sourceTree = "<group>";
@@ -126,15 +112,6 @@
 				DAAABAB026DFA4D0001CB7AC /* Info.plist */,
 			);
 			path = Demo_2Tests;
-			sourceTree = "<group>";
-		};
-		DAAABAB826DFA4D0001CB7AC /* Demo_2UITests */ = {
-			isa = PBXGroup;
-			children = (
-				DAAABAB926DFA4D0001CB7AC /* Demo_2UITests.m */,
-				DAAABABB26DFA4D0001CB7AC /* Info.plist */,
-			);
-			path = Demo_2UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,24 +152,6 @@
 			productReference = DAAABAAA26DFA4D0001CB7AC /* Demo_2Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DAAABAB426DFA4D0001CB7AC /* Demo_2UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DAAABAC426DFA4D0001CB7AC /* Build configuration list for PBXNativeTarget "Demo_2UITests" */;
-			buildPhases = (
-				DAAABAB126DFA4D0001CB7AC /* Sources */,
-				DAAABAB226DFA4D0001CB7AC /* Frameworks */,
-				DAAABAB326DFA4D0001CB7AC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DAAABAB726DFA4D0001CB7AC /* PBXTargetDependency */,
-			);
-			name = Demo_2UITests;
-			productName = Demo_2UITests;
-			productReference = DAAABAB526DFA4D0001CB7AC /* Demo_2UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,10 +164,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					DAAABAA926DFA4D0001CB7AC = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = DAAABA8E26DFA4CD001CB7AC;
-					};
-					DAAABAB426DFA4D0001CB7AC = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = DAAABA8E26DFA4CD001CB7AC;
 					};
@@ -229,7 +184,6 @@
 			targets = (
 				DAAABA8E26DFA4CD001CB7AC /* Demo_2 */,
 				DAAABAA926DFA4D0001CB7AC /* Demo_2Tests */,
-				DAAABAB426DFA4D0001CB7AC /* Demo_2UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,13 +206,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAAABAB326DFA4D0001CB7AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -269,6 +216,7 @@
 				DAAABA9A26DFA4CD001CB7AC /* ViewController.m in Sources */,
 				DAAABA9426DFA4CD001CB7AC /* AppDelegate.m in Sources */,
 				DAAABAA526DFA4D0001CB7AC /* main.m in Sources */,
+				DAC8C81D26F0E3D7002C3694 /* Calculator.m in Sources */,
 				DAAABA9726DFA4CD001CB7AC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,14 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAAABAAF26DFA4D0001CB7AC /* Demo_2Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAAABAB126DFA4D0001CB7AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DAAABABA26DFA4D0001CB7AC /* Demo_2UITests.m in Sources */,
+				DAC8C81E26F0E406002C3694 /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,11 +237,6 @@
 			isa = PBXTargetDependency;
 			target = DAAABA8E26DFA4CD001CB7AC /* Demo_2 */;
 			targetProxy = DAAABAAB26DFA4D0001CB7AC /* PBXContainerItemProxy */;
-		};
-		DAAABAB726DFA4D0001CB7AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DAAABA8E26DFA4CD001CB7AC /* Demo_2 */;
-			targetProxy = DAAABAB626DFA4D0001CB7AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -478,6 +414,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J9P7C9228A;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo_2Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,6 +435,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J9P7C9228A;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo_2Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,42 +447,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo_2.app/Demo_2";
-			};
-			name = Release;
-		};
-		DAAABAC526DFA4D0001CB7AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J9P7C9228A;
-				INFOPLIST_FILE = Demo_2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.taQ1Y21.ua.Demo-2UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Demo_2;
-			};
-			name = Debug;
-		};
-		DAAABAC626DFA4D0001CB7AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J9P7C9228A;
-				INFOPLIST_FILE = Demo_2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.taQ1Y21.ua.Demo-2UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Demo_2;
 			};
 			name = Release;
 		};
@@ -574,15 +476,6 @@
 			buildConfigurations = (
 				DAAABAC226DFA4D0001CB7AC /* Debug */,
 				DAAABAC326DFA4D0001CB7AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DAAABAC426DFA4D0001CB7AC /* Build configuration list for PBXNativeTarget "Demo_2UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DAAABAC526DFA4D0001CB7AC /* Debug */,
-				DAAABAC626DFA4D0001CB7AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

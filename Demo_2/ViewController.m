@@ -6,16 +6,19 @@
 //
 
 #import "ViewController.h"
+#import "Calculator.h"
 
 @interface ViewController ()
-
+@property (nonatomic, weak) IBOutlet UILabel *resultLabel;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    Calculator *calculator = [Calculator new];
+    [calculator messWithSwizzling];
+    self.resultLabel.text = [NSString stringWithFormat:@"%.0f", [calculator add:2 to:3]];
 }
 
 

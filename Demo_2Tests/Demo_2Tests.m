@@ -6,31 +6,34 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Calculator.h"
 
 @interface Demo_2Tests : XCTestCase
 
 @end
 
 @implementation Demo_2Tests
-
-- (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+- (void)testExample_1
+{
+    Calculator *calculator = [Calculator new];
+    XCTAssertTrue([calculator add:2 to:3] == 5);
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)testExample_2
+{
+    Calculator *calculator = [Calculator new];
+    XCTAssertTrue([calculator subtract:3 from:5] == 2);
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testExample_3
+{
+    Calculator *calculator = [Calculator new];
+    XCTAssertTrue([calculator multiply:2 by:4] == 8);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testExample_4
+{
+    Calculator *calculator = [Calculator new];
+    XCTAssertTrue([calculator divide:10 by:5] == 2);
 }
-
 @end
